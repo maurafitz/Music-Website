@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome </title>
+<style type="text/css" media="screen">
+    body {
+        margin: 0;
+        margin-bottom: 25px;
+        padding: 0;
+        background-color: #f0f0f0;
+        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+        font-size: 13px;
+        color: #333;
+    }
+
+    h1 {
+        font-size: 28px;
+        color: #000;
+    }
+
+    a {
+        color: #03c
+    }
+
+    a:hover {
+        background-color: #03c;
+        color: white;
+        text-decoration: none;
+    }
+
+    #page {
+        background-color: #f0f0f0;
+        width: 750px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content {
+        float: left;
+        background-color: white;
+        border: 3px solid #aaa;
+        border-top: none;
+        padding: 25px;
+        width: 500px;
+    }
+
+    #sidebar {
+        float: right;
+        width: 175px;
+    }
+
+    #footer {
+        clear: both;
+    }
+
+    #header, #about, #getting-started {
+        padding-left: 75px;
+        padding-right: 30px;
+    }
+
+    #header {
+        background-image: url("images/music_note.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: 64px;
+    }
+
+    #header h1, #header h2 {
+        margin: 0
+    }
+
+    #header h2 {
+        color: #888;
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    #about h3 {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    #about-content {
+        background-color: #ffd;
+        border: 1px solid #fc0;
+        margin-left: -55px;
+        margin-right: -10px;
+    }
+
+    #about-content table {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 11px;
+        border-collapse: collapse;
+    }
+
+    #about-content td {
+        padding: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    #about-content td.name {
+        color: #555
+    }
+
+    #about-content td.value {
+        color: #000
+    }
+
+    #about-content ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    #about-content.failure {
+        background-color: #fcc;
+        border: 1px solid #f00;
+    }
+
+    #about-content.failure p {
+        margin: 0;
+        padding: 10px;
+    }
+
+    #getting-started {
+        border-top: 1px solid #ccc;
+        margin-top: 25px;
+        padding-top: 15px;
+    }
+
+    #getting-started h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    #getting-started h2 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: normal;
+        color: #333;
+        margin-bottom: 25px;
+    }
+
+    #getting-started ol {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #getting-started li {
+        font-size: 18px;
+        color: #888;
+        margin-bottom: 25px;
+    }
+
+    #getting-started li h2 {
+        margin: 0;
+        font-weight: normal;
+        font-size: 18px;
+        color: #333;
+    }
+
+    #getting-started li p {
+        color: #555;
+        font-size: 13px;
+    }
+
+    #sidebar ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #sidebar ul h3 {
+        margin-top: 25px;
+        font-size: 16px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #sidebar li {
+        list-style-type: none;
+    }
+
+    #sidebar ul.links li {
+        margin-bottom: 5px;
+    }
+
+    .filename {
+        font-style: italic;
+    }
+</style>
+<script type="text/javascript">
+    function about() {
+        info = document.getElementById('about-content');
+        if (window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest();
+        }
+        else {
+            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xhr.open("GET", "rails/info/properties", false);
+        xhr.send("");
+        info.innerHTML = xhr.responseText;
+        info.style.display = 'block'
+    }
+</script>
+</head>
+<body style="
+background-image: url(images/Wallpaper.jpg);
+">
+<% if not user_signed_in? %>
+    <div id="sign_in" style="
+    float: right;
+            border: solid 3px;
+            padding: 9px;
+            margin-top: 30px;
+            margin-right: 40px;
+            margin-left: 40px;
+            background-color: #fff;
+    ">
+      <form action="/users/sign_in" method="get" />
+      <button style="
+      margin-bottom: 25px;
+              font-size: 35px;
+      ">Sign In   </button>   </form>
+
+      <br>
+
+      New?
+      <form action="/users/sign_up" method="get"/>
+      <button>Create An Account</button>
+      </form>
+    </div>
+<%end%>
+  <div id="header" style="
+    margin-left: 50px;
+    margin-top: 20px;
+">
+<h1 style="
+    padding: 10px;
+    background-color: #66CCFF;
+    margin-right: 750px;
+    border: solid 3px;
+">Welcome to </h1>
+</div>
+
+
+<div id="main_explanation" style="
+    overflow: hidden;
+">
+<div style="
+    float: left;
+    border: solid 3px;
+    margin: 10px;
+    padding: 8px;
+    background-color: #fff;
+">
+<h2 style="
+">The Mission:</h2>
+                     Here's our goal:
+        <p style="
+">To make live music more accessible for those who lack access to it. " " will simplify the process to set up
+            local performances in order to
+            encourage free performances around the community........" </p>
+    </div>
+</div>
+
+<div id="get_started" style="
+    overflow: hidden;
+">
+    <div style="
+    border: solid 3px;
+    float: left;
+    padding: 10px;
+    margin: 20px;
+    background-color: #fff;
+">
+        <h2 style="
+    clear: left;
+"> Learn More: </h2>
+
+        <form action="/get_started.html" method="get"/>
+        <button style="
+    margin-left: 90px;
+    padding: 5px;
+"> How to Get Started
+        </button>
+        </form>
+    </div>
+</div>
+
+<div id="contact_information" style="
+    overflow: hidden;
+">
+    <div style="
+    border: solid 3px;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+">
+        <h2 style="
+"> Contact Information: </h2>
+        <ul style="
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+">
+            <li> Phone: 518-588-2520</li>
+            <li> Email: momochanfitz@gmail.com</li>
+        </ul>
+
+    </div>
+</div>
+<div id="footer">&nbsp;</div>
+
+</body>
+</html>

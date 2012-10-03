@@ -1,0 +1,23 @@
+
+<h1>Music Groups</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Date Formed</th>
+  </tr>
+
+<% @music_groups.each do |music_group| %>
+  <tr>
+    <td><%= music_group.name %></td>
+    <td><%= music_group.location_city %></td>
+    <td><%= music_group.location_state %></td>
+    <td><%= music_group.date_formed %></td>
+  </tr>
+<% end %>
+  </table>
+  <button style=
+  "margin-top: 30px;"><%= link_to 'New Music Group', new_music_group_path %>  </button>
+

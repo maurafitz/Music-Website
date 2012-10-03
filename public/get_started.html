@@ -1,0 +1,333 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Get Started</title>
+<style type="text/css" media="screen">
+    body {
+        margin: 0;
+        margin-bottom: 25px;
+        padding: 0;
+        background-color: #f0f0f0;
+        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+        font-size: 13px;
+        color: #333;
+    }
+
+    h1 {
+        font-size: 28px;
+        color: #000;
+    }
+
+    a {
+        color: #03c
+    }
+
+    a:hover {
+        background-color: #03c;
+        color: white;
+        text-decoration: none;
+    }
+
+    #page {
+        background-color: #f0f0f0;
+        width: 750px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content {
+        float: left;
+        background-color: white;
+        border: 3px solid #aaa;
+        border-top: none;
+        padding: 25px;
+        width: 500px;
+    }
+
+    #sidebar {
+        float: right;
+        width: 175px;
+    }
+
+    #footer {
+        clear: both;
+    }
+
+    #header, #about, #getting-started {
+        padding-left: 75px;
+        padding-right: 30px;
+    }
+
+    #header {
+        background-image: url("images/music_note.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: 64px;
+    }
+
+    #header h1, #header h2 {
+        margin: 0
+    }
+
+    #header h2 {
+        color: #888;
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    #about h3 {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    #about-content {
+        background-color: #ffd;
+        border: 1px solid #fc0;
+        margin-left: -55px;
+        margin-right: -10px;
+    }
+
+    #about-content table {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 11px;
+        border-collapse: collapse;
+    }
+
+    #about-content td {
+        padding: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    #about-content td.name {
+        color: #555
+    }
+
+    #about-content td.value {
+        color: #000
+    }
+
+    #about-content ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    #about-content.failure {
+        background-color: #fcc;
+        border: 1px solid #f00;
+    }
+
+    #about-content.failure p {
+        margin: 0;
+        padding: 10px;
+    }
+
+    #getting-started {
+        border-top: 1px solid #ccc;
+        margin-top: 25px;
+        padding-top: 15px;
+    }
+
+    #getting-started h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    #getting-started h2 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: normal;
+        color: #333;
+        margin-bottom: 25px;
+    }
+
+    #getting-started ol {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #getting-started li {
+        font-size: 18px;
+        color: #888;
+        margin-bottom: 25px;
+    }
+
+    #getting-started li h2 {
+        margin: 0;
+        font-weight: normal;
+        font-size: 18px;
+        color: #333;
+    }
+
+    #getting-started li p {
+        color: #555;
+        font-size: 13px;
+    }
+
+    #sidebar ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #sidebar ul h3 {
+        margin-top: 25px;
+        font-size: 16px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #sidebar li {
+        list-style-type: none;
+    }
+
+    #sidebar ul.links li {
+        margin-bottom: 5px;
+    }
+
+    .filename {
+        font-style: italic;
+    }
+</style>
+<script type="text/javascript">
+    function about() {
+        info = document.getElementById('about-content');
+        if (window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest();
+        }
+        else {
+            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xhr.open("GET", "rails/info/properties", false);
+        xhr.send("");
+        info.innerHTML = xhr.responseText;
+        info.style.display = 'block'
+    }
+</script>
+</head>
+<body style="
+    background-image: url(images/Wallpaper.jpg);
+">
+<div id="sign_in" style="
+    float: right;
+    border: solid 3px;
+    padding: 9px;
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
+    background-color: #fff;
+">
+    <h2 style="
+    margin-top: 0;
+">Sign In:</h2>
+
+    <div>Username:</div>
+    <div style="
+    padding: 2px;
+">Password:
+    </div>
+    <button style="
+    padding: 4px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+">Go
+    </button>
+    <br>
+    New?
+    <button>Create An Account</button>
+
+</div>
+
+<div id="header" style="
+    margin-left: 50px;
+    margin-top: 20px;
+">
+    <h1 style="
+    padding: 10px;
+    background-color: #66CCFF;
+    margin-right: 630px;
+    border: solid 3px;
+">How to Get Started</h1>
+</div>
+
+
+<div id="sign_up" style="
+    overflow: hidden;
+">
+    <div style="
+    float: left;
+    border: solid 3px;
+    margin: 10px;
+    padding: 8px;
+    background-color: #fff;
+">
+        <h2 style="
+">Create an account. </h2>
+
+        <p> Sign up as either a musician/ensemble, or as a venue. With your account, you
+            can connect with other venues and musicians to coordinate free performances. "" is
+            a great way to reach out to community members while spreading music to others.
+            Join now!
+        </p>
+    </div>
+</div>
+
+<div id="Profile" style="
+    overflow: hidden;
+">
+    <div style="
+    border: solid 3px;
+    float: left;
+    padding: 10px;
+    margin: 20px;
+    background-color: #fff;
+">
+        <h2 style="
+    clear: left;
+"> About Your Profile: </h2>
+
+        <p> Edit your profile by setting your preferences. Display your group
+            or venue name, and add media so others can learn more about
+            you. i</p>
+
+        <h3> Musicians. </h3>
+
+        <p> If you are a musician or music group, list your common repertoire
+            and describe your usual audience and venues.</p>
+
+        <h3> Venues </h3>
+
+        <p> If you are a venue, describe your location, the usual audience, and
+            the type of music group you will be looking for. </p>
+
+    </div>
+</div>
+
+<div id="calendar" style="
+    overflow: hidden;
+">
+    <div style="
+    border: solid 3px;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+">
+        <h2 style="
+"> The Calendar </h2>
+
+        <p> Your calendar allows you to organize important future dates and gives you
+            the opportunity to publicize events. If a venue/music group accepts
+            your request for a particular date, the date will be scheduled on your
+            calendar. </p>
+    </div>
+</div>
+<div id="footer">&nbsp;</div>
+
+</body>
+</html>
